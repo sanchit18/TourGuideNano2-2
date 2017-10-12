@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:visibility="visible"
+        android:src="@mipmap/ic_launcher"  />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/image_view"
+        android:orientation="vertical"
+        android:paddingLeft="6dp"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+          android:paddingTop="0dp"
+            android:textSize="@dimen/headline_text"
+            android:ellipsize="end"
+            tools:text="Sample Text" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:paddingTop="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="(+111)111-111-1111" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="0dp"
+            android:paddingTop="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="Sample Address Text" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">TourGuideNano</string>
+    <string name="pub1_name">The Palace Bar</string>
+    <string name="pub1_phone">+353 1 671 7388</string>
+    <string name="pub1_image">https://i.imgur.com/nZJEu9o.jpg</string>
+    <string name="pub1_address">21 Fleet St, Dublin 2, Ireland</string>
+    <string name="pub2_name">The Brazen Head</string>
+    <string name="pub2_phone">+353 1 677 9549</string>
+    <string name="pub2_image">https://i.imgur.com/9z70znk.jpg</string>
+    <string name="pub2_address">20 Bridge Street Lower, Dublin 8, Ireland</string>
+    <string name="pub3_name">The Stag’s Head</string>
+    <string name="pub3_phone">+353 1 679 3687</string>
+    <string name="pub3_image">https://i.imgur.com/ImYFXrs.jpg</string>
+    <string name="pub3_address">1 Dame Court, Dublin 2, Ireland</string>
+    <string name="pub4_name">The Bleeding Horse</string>
+    <string name="pub4_phone">+353 1 475 2705</string>
+    <string name="pub4_image">https://i.imgur.com/wGJVV9C.jpg</string>
+    <string name="pub4_address">24-25 Camden Street Upper, Dublin 2, Ireland</string>
+    <string name="beach1_name">Tower Bay Beach, Portrane</string>
+    <string name="beach1_phone">(No Contact Number)</string>
+    <string name="beach1_image">https://i.imgur.com/1Y8Nq1P.jpg</string>
+    <string name="beach1_address">Quay, Portrane, Co. Dublin</string>
+    <string name="beach2_name">Velvet Strand, Portmarnock</string>
+    <string name="beach2_phone">(No Contact Number)</string>
+    <string name="beach2_image">https://i.imgur.com/YcXuK0C.jpg</string>
+    <string name="beach2_address">Velvet Strand, Old Portmarnock, Portmarnock, Co. Dublin</string>
+    <string name="park1_name">St Anne\'s Park</string>
+    <string name="park1_phone">(No Contact Number)</string>
+    <string name="park1_image">https://i.imgur.com/ULxFcRd.jpg</string>
+    <string name="park1_address">St Anne’s Park, Dublin 5, Ireland</string>
+    <string name="park2_name">St Stephen’s Green</string>
+    <string name="park2_phone">(01) 475 7816</string>
+    <string name="park2_image">https://i.imgur.com/3fB4u1u.jpg</string>
+    <string name="park2_address">St Stephen’s Green, Dublin 2, Ireland</string>
+    <string name="shop1_name">O\'Connell Street Shopping District.</string>
+    <string name="shop1_phone">+3537057000</string>
+    <string name="shop1_image">https://i.imgur.com/b2l8url.jpg</string>
+    <string name="shop1_address">O\'Connell Street, Dublin City Centre, Ireland</string>
+    <string name="shop2_name">Grafton Street Shopping District.</string>
+    <string name="shop2_phone">+353-1-872-9891</string>
+    <string name="shop2_image">https://i.imgur.com/Erq9pTV.jpg </string>
+    <string name="shop2_address">Grafton Street, Dublin City Centre, Ireland</string>
+
+</resources>

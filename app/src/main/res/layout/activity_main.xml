@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udacity.sanchitsharma.tourguidenano.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/TopDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click on the labels below to explore the City of Dublin furhter!"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/Pubs"
+            android:padding="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pubs"
+            android:onClick="PubClicked"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/Beaches"
+            android:padding="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beaches"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:onClick="BeachesClicked"/>
+
+        <TextView
+            android:id="@+id/Park"
+            android:padding="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parks/Gardens"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:onClick="ParkClicked"/>
+
+        <TextView
+            android:id="@+id/Shopping"
+            android:padding="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shopping"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:onClick="ShoppingClicked"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

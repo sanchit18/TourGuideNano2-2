@@ -1,4 +1,5 @@
 package com.udacity.sanchitsharma.tourguidenano;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
 
 /**
@@ -9,13 +10,13 @@ public class Place {
     private String mName;
     private String mPhone;
     private String mAddress;
-    private String mUrl;
+    private Drawable mImage;
     private Location mLocation;
-    public Place(String name, String phone, String address, String imageUrl, Location location) {
+    public Place(String name, String phone, String address, Drawable image, Location location) {
         mName = name;
         mPhone = phone;
         mAddress = address;
-        mUrl = imageUrl;
+        mImage = image;
         mLocation = location;
     }
     public String getName() {
@@ -30,8 +31,8 @@ public class Place {
     public String getAddress() {
         return mAddress;
     }
-    public String getUrl() {
-        return mUrl;
+    public Drawable getImage() {
+        return mImage;
     }
 }
 

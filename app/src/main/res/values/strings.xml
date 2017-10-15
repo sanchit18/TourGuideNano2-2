@@ -41,4 +41,11 @@
     <string name="shop2_image">https://i.imgur.com/Erq9pTV.jpg </string>
     <string name="shop2_address">Grafton Street, Dublin City Centre, Ireland</string>
 
+    <string name="geoparse3">\?q=</string>
+    <string name="geoparse1">geo:</string>
+    <string name="geoparse2">,</string>
+    <string name="geoparse4">com.google.android.apps.maps</string>
+    <string name="geoparse5">com.google.android.maps.MapsActivity</string>
+
+
 </resources>

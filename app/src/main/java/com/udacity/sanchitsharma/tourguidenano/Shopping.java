@@ -22,12 +22,12 @@ public class Shopping extends AppCompatActivity {
         shop1.setLatitude(53.348803);
         shop1.setLongitude(-6.3303511);
         places.add(new Place(getResources().getString(R.string.shop1_name), getResources().getString(R.string.shop1_phone),
-                getResources().getString(R.string.shop1_address), getResources().getString(R.string.shop1_image), shop1));
+                getResources().getString(R.string.shop1_address), getDrawable(R.mipmap.shopping1), shop1));
         Location shop2 = new Location(getResources().getString(R.string.shop2_name));
         shop2.setLatitude(53.3400675);
         shop2.setLongitude(-6.3306095);
         places.add(new Place(getResources().getString(R.string.shop2_name), getResources().getString(R.string.shop2_phone),
-                getResources().getString(R.string.shop2_address), getResources().getString(R.string.shop2_image), shop2));
+                getResources().getString(R.string.shop2_address), getDrawable(R.mipmap.shopping2), shop2));
         ViewAdapter adapter = new ViewAdapter(this, places);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
@@ -37,9 +37,9 @@ public class Shopping extends AppCompatActivity {
                 double lat = places.get(position).getLocation().getLatitude();
                 double lon = places.get(position).getLocation().getLongitude();
                 String name = places.get(position).getName();
-                Uri uri = Uri.parse("geo:" + lat + "," + lon + "?q=" + Uri.encode(name));
+                Uri uri = Uri.parse(getString(com.udacity.sanchitsharma.tourguidenano.R.string.geoparse1) + lat + getString(com.udacity.sanchitsharma.tourguidenano.R.string.geoparse2) + lon + getString(com.udacity.sanchitsharma.tourguidenano.R.string.geoparse3) + Uri.encode(name));
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                intent.setClassName(getString(com.udacity.sanchitsharma.tourguidenano.R.string.geoparse4), getString(com.udacity.sanchitsharma.tourguidenano.R.string.geoparse5));
                 startActivity(intent);
             }
         });

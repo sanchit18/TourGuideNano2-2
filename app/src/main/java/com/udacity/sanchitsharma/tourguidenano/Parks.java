@@ -22,12 +22,12 @@ public class Parks extends AppCompatActivity {
         park1.setLatitude(53.3712996);
         park1.setLongitude(-6.1798386);
         places.add(new Place(getResources().getString(R.string.park1_name), getResources().getString(R.string.park1_phone),
-                getResources().getString(R.string.park1_address), getResources().getString(R.string.park1_image), park1));
+                getResources().getString(R.string.park1_address), getDrawable(R.mipmap.garden1), park1));
         Location park2 = new Location(getResources().getString(R.string.park2_name));
         park2.setLatitude(53.3381531);
         park2.setLongitude(-6.3291585);
         places.add(new Place(getResources().getString(R.string.park2_name), getResources().getString(R.string.park2_phone),
-                getResources().getString(R.string.park2_address), getResources().getString(R.string.park2_image), park2));
+                getResources().getString(R.string.park2_address), getDrawable(R.mipmap.garden2), park2));
         ViewAdapter adapter = new ViewAdapter(this, places);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
@@ -37,9 +37,11 @@ public class Parks extends AppCompatActivity {
                 double lat = places.get(position).getLocation().getLatitude();
                 double lon = places.get(position).getLocation().getLongitude();
                 String name = places.get(position).getName();
-                Uri uri = Uri.parse("geo:" + lat + "," + lon + "?q=" + Uri.encode(name));
+                Uri uri = Uri.parse(getString(com.udacity.sanchitsharma.tourguidenano.R.string.geoparse1) + lat
+                        + getString(com.udacity.sanchitsharma.tourguidenano.R.string.geoparse2) + lon +
+                        getString(com.udacity.sanchitsharma.tourguidenano.R.string.geoparse3) + Uri.encode(name));
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                intent.setClassName(getString(com.udacity.sanchitsharma.tourguidenano.R.string.geoparse4), getString(com.udacity.sanchitsharma.tourguidenano.R.string.geoparse5));
                 startActivity(intent);
             }
         });

@@ -7,8 +7,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
-
 import java.util.ArrayList;
 /**
  * Created by sanchitsharma on 10/10/17.
@@ -37,11 +35,7 @@ public class ViewAdapter extends ArrayAdapter<Place> {
         TextView addressTextView = (TextView) listItemView.findViewById(R.id.address);
         addressTextView.setText(currentPlace.getAddress());
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image_view);
-        Picasso.with(getContext())
-                .load(currentPlace.getUrl())
-                .resizeDimen(R.dimen.list_item_image_width, R.dimen.list_item_image_height)
-                .centerInside()
-                .into(imageView);
+        imageView.setImageDrawable(currentPlace.getImage());
         return listItemView;
     }
 }

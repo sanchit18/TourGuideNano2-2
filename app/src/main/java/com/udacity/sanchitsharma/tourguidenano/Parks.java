@@ -22,12 +22,12 @@ public class Parks extends AppCompatActivity {
         park1.setLatitude(53.3712996);
         park1.setLongitude(-6.1798386);
         places.add(new Place(getResources().getString(R.string.park1_name), getResources().getString(R.string.park1_phone),
-                getResources().getString(R.string.park1_address), getDrawable(R.mipmap.garden1), park1));
+                getResources().getString(R.string.park1_address), getDrawable(R.drawable.garden1stannes), park1));
         Location park2 = new Location(getResources().getString(R.string.park2_name));
         park2.setLatitude(53.3381531);
         park2.setLongitude(-6.3291585);
         places.add(new Place(getResources().getString(R.string.park2_name), getResources().getString(R.string.park2_phone),
-                getResources().getString(R.string.park2_address), getDrawable(R.mipmap.garden2), park2));
+                getResources().getString(R.string.park2_address), getDrawable(R.drawable.garden2phoenix), park2));
         ViewAdapter adapter = new ViewAdapter(this, places);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);

@@ -22,12 +22,12 @@ public class Beaches extends AppCompatActivity {
         beach1.setLatitude(53.4891088);
         beach1.setLongitude(-6.0988327);
         places.add(new Place(getResources().getString(R.string.beach1_name), getResources().getString(R.string.beach1_phone),
-                getResources().getString(R.string.beach1_address), getDrawable(R.mipmap.beach1), beach1));
+                getResources().getString(R.string.beach1_address), getDrawable(R.drawable.beach1), beach1));
         Location beach2 = new Location(getResources().getString(R.string.beach2_name));
         beach2.setLatitude(53.4197312);
         beach2.setLongitude(-6.1582236);
         places.add(new Place(getResources().getString(R.string.beach2_name), getResources().getString(R.string.beach2_phone),
-                getResources().getString(R.string.beach2_address), getDrawable(R.mipmap.beach2), beach2));
+                getResources().getString(R.string.beach2_address), getDrawable(R.drawable.beach2), beach2));
         ViewAdapter adapter = new ViewAdapter(this, places);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
